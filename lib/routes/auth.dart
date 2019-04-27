@@ -106,6 +106,13 @@ class _AuthState extends State<AuthScreen> {
     return await _signIn();
   }
 
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance
+        .addPostFrameCallback((_) => _updateRefreshing(true));
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
