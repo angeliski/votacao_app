@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:votacao_app/routes/auth.dart';
+import 'package:votacao_app/routes/auth_screen.dart';
 
 void main() => runApp(MyApp());
 
